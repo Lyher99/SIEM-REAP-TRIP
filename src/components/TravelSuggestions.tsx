@@ -38,7 +38,7 @@ export const TravelSuggestions: React.FC<TravelSuggestionsProps> = ({ places, on
       <header className="mb-12 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4">
           <Sparkles size={14} />
-          AI Powered Suggestions
+          Curated Itineraries
         </div>
         <h2 className="text-5xl font-serif font-bold text-ink mb-6 italic">Plan Your Journey</h2>
         <p className="text-neutral-500 max-w-2xl mx-auto text-lg leading-relaxed mb-10">
