@@ -1,0 +1,57 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 0. Default Deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isOwner(data) {
+      return isSignedIn() && data.userId == request.auth.uid;
+    }
+
+    // Validation for Place
+    function isValidPlace(data) {
+      let requiredFields = ['name', 'category', 'lat', 'lng'];
+      let optionalFields = ['description', 'image', 'rating', 'openHours', 'address', 'priceRange', 'userId'];
+      
+      return data.keys().hasAll(requiredFields) &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 100 &&
+             data.category in ['Temple', 'Hotel', 'Restaurant', 'Cafe', 'Activity'] &&
+             data.lat is number && data.lat >= -90 && data.lat <= 90 &&
+             data.lng is number && data.lng >= -180 && data.lng <= 180 &&
+             (!('description' in data) || (data.description is string && data.description.size() <= 1000)) &&
+             (!('image' in data) || (data.image is string && data.image.size() <= 500)) &&
+             (!('rating' in data) || (data.rating is number && data.rating >= 0 && data.rating <= 5)) &&
+             (!('openHours' in data) || (data.openHours is string && data.openHours.size() <= 100)) &&
+             (!('address' in data) || (data.address is string && data.address.size() <= 200)) &&
+             (!('priceRange' in data) || (data.priceRange is string && data.priceRange.size() <= 10));
+    }
+
+    // Places Collection
+    match /places/{placeId} {
+      // Anyone can read places
+      allow list, get: if true;
+      
+      // Allowing public creation for the demo seeding process
+      // In a production app, this would be restricted to isSignedIn() or an admin
+      allow create: if isValidPlace(incoming());
+      
+      // Allow updates/deletes if signed in (prototype relaxation)
+      allow update, delete: if isSignedIn(); 
+    }
+  }
+}

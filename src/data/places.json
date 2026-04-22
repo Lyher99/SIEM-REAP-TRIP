@@ -1,0 +1,98 @@
+[
+  {
+    "id": "angkor-wat",
+    "name": "Angkor Wat",
+    "category": "Temple",
+    "description": "The largest religious monument in the world and the soul of Cambodia. Originally constructed as a Hindu temple for the Khmer Empire, it was gradually transformed into a Buddhist temple towards the end of the 12th century.",
+    "lat": 13.4125,
+    "lng": 103.8667,
+    "image": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1200&h=800&fit=crop",
+    "gallery": [
+      "https://images.unsplash.com/photo-1563911302283-d2bc120e7751?q=80&w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1625411516016-1604a112cd9c?q=80&w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=800&h=800&fit=crop"
+    ],
+    "rating": 4.9,
+    "openHours": "5:00 AM - 6:00 PM",
+    "address": "Angkor Archaeological Park",
+    "priceRange": "$37+",
+    "bookingUrl": "https://www.angkorenterprise.gov.kh/",
+    "visitDuration": 4
+  },
+  {
+    "id": "bayon-temple",
+    "name": "Bayon Temple",
+    "category": "Temple",
+    "description": "Famous for its many smiling stone faces on the towers. The Bayon was the last state temple to be built at Angkor, and the only Angkorian state temple to be built primarily as a Mahayana Buddhist shrine dedicated to the Buddha.",
+    "lat": 13.4412,
+    "lng": 103.8588,
+    "image": "https://images.unsplash.com/photo-1563911302283-d2bc120e7751?q=80&w=1200&h=800&fit=crop",
+    "gallery": [
+       "https://images.unsplash.com/photo-1600100397561-4475459388c4?q=80&w=800&h=800&fit=crop",
+       "https://images.unsplash.com/photo-1563911302283-d2bc120e7751?q=80&w=800&h=800&fit=crop"
+    ],
+    "rating": 4.8,
+    "openHours": "7:30 AM - 5:30 PM",
+    "address": "Angkor Thom",
+    "visitDuration": 2
+  },
+  {
+    "id": "ta-prohm",
+    "name": "Ta Prohm",
+    "category": "Temple",
+    "description": "The 'Tomb Raider' temple, where trees grow out of the ruins. Unlike most Angkorian temples, Ta Prohm has been left in much the same condition in which it was found: the photogenic and atmospheric combination of trees growing out of the ruins.",
+    "lat": 13.4348,
+    "lng": 103.8893,
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc18a594?q=80&w=1200&h=800&fit=crop",
+    "gallery": [
+       "https://images.unsplash.com/photo-1473654729523-203e25dfda10?q=80&w=800&h=800&fit=crop",
+       "https://images.unsplash.com/photo-1596422846543-75c6fc18a594?q=80&w=800&h=800&fit=crop"
+    ],
+    "rating": 4.9,
+    "openHours": "7:30 AM - 5:30 PM",
+    "address": "Angkor Archaeological Park",
+    "visitDuration": 2
+  },
+  {
+    "id": "pub-street",
+    "name": "Pub Street",
+    "category": "Activity",
+    "description": "The heart of Siem Reap nightlife with bars, clubs, and street food. officially known as Street 8, it's the center of the action in the evenings with neon lights and loud music.",
+    "lat": 13.3533,
+    "lng": 103.8550,
+    "image": "https://images.unsplash.com/photo-1582234372722-50d7ccc30ebd?q=80&w=1200&h=800&fit=crop",
+    "rating": 4.5,
+    "openHours": "5:00 PM - 2:00 AM",
+    "address": "Siem Reap Center",
+    "visitDuration": 3
+  },
+  {
+    "id": "sister-srey",
+    "name": "Sister Srey Cafe",
+    "category": "Cafe",
+    "description": "A social enterprise cafe serving great coffee and healthy food. It aims to support young Cambodians through hospitality training and community projects.",
+    "lat": 13.3595,
+    "lng": 103.8570,
+    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&h=800&fit=crop",
+    "rating": 4.7,
+    "priceRange": "$$",
+    "openHours": "7:00 AM - 6:00 PM",
+    "address": "Sangkat Svay Dangkum",
+    "visitDuration": 1
+  },
+  {
+    "id": "park-hyatt",
+    "name": "Park Hyatt Siem Reap",
+    "category": "Hotel",
+    "description": "A luxury oasis in the center of the city. Housed in a landmark building, this five-star luxury hotel in Siem Reap is located near the Angkor archaeological site.",
+    "lat": 13.3619,
+    "lng": 103.8576,
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&h=800&fit=crop",
+    "rating": 4.8,
+    "priceRange": "$$$$",
+    "address": "Sivutha Blvd",
+    "bookingUrl": "https://www.hyatt.com/en-US/hotel/cambodia/park-hyatt-siem-reap/repph",
+    "visitDuration": 0
+  }
+]

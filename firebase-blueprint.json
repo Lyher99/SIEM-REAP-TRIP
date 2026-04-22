@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "Place": {
+      "title": "Travel Place",
+      "description": "A point of interest in Siem Reap",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the place" },
+        "category": { "type": "string", "enum": ["Temple", "Hotel", "Restaurant", "Cafe", "Activity"], "description": "Category of the place" },
+        "description": { "type": "string", "description": "Short description" },
+        "lat": { "type": "number", "description": "Latitude" },
+        "lng": { "type": "number", "description": "Longitude" },
+        "image": { "type": "string", "description": "Image URL" },
+        "rating": { "type": "number", "description": "Average rating" },
+        "priceRange": { "type": "string", "description": "Price range (e.g. $, $$, $$$)" },
+        "openHours": { "type": "string", "description": "Opening hours" },
+        "address": { "type": "string", "description": "Physical address" }
+      },
+      "required": ["name", "category", "lat", "lng"]
+    }
+  },
+  "firestore": {
+    "places/{placeId}": {
+      "schema": "Place",
+      "description": "Public directory of places in Siem Reap"
+    }
+  }
+}

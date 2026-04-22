@@ -1,0 +1,6 @@
+{
+  "name": "SIEM REAP TRIP",
+  "description": "A comprehensive travel companion for exploring Siem Reap, featuring interactive maps, saved locations, and curated multi-day itineraries.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
